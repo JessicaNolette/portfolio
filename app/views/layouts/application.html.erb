@@ -10,8 +10,54 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
   </head>
-
   <body>
-    <%= yield %>
+
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="my_name">
+        <h1>Jessica Lea Nolette</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <%= link_to '<li>Welcome</li>'.html_safe, 'welcome' %>
+          <%= link_to '<li>Portfolio</li>'.html_safe, 'portfolio' %>
+          <li><a href=#>About</a></li>
+          <li><a href=#>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </header>
+<%= yield %>
+ 
+ <div class="footer">
+  <div class="container">
+    <ul class="social_media">
+      <li>
+        <div class="github">
+          <a class="github" href="https://github.com/JessicaNolette">github</a>
+        </div>
+      </li>
+      <li>
+        <div class="linkedin">
+        <%# Put a "#" to leave the href black until ready to put in url %>
+          <a href="https://www.linkedin.com/in/jessicanolette/">linkedin</a>
+        </div>
+      </li>
+      
+    </ul>
+    <p>&copy; 2020 Jessica Lea Nolette</p>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
   </body>
 </html>
